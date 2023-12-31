@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="controle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout d'une consultation </title>
+</head>
+<body>
+    <form action="connsultation.php" method="post">
+        <fieldset>
+            <h1>Ajout d'une consultation </h1>
+            <label for="">Matricule</label>
+            <input type="text" name="mat" id="mat"> <br>
+            <label for="">Détail:</label>
+            <textarea name="de" id="de" cols="30" rows="10"></textarea> <br>
+            <label for="">Prochin R.D.V.aprés :</label>
+            <input type="time" name="pr" id="pr">  <label for="">jours </label><br>
+            <input type="reset" value="Annuler">
+            <input type="submit" value="Confirmer" onclick="confirmer()">
+
+        </fieldset>
+    </form>
+</body>
+</html>
